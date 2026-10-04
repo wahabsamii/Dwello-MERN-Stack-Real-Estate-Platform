@@ -18,9 +18,9 @@ function Home() {
   return (
     <div className='relative'>
       {
-        loading ? <div className='w-[100vw] h-[100vh] flex justify-center items-center absolute top-[-70px] left-0 right-0 bg-[#fdf3ee]'>
-          <BeatLoader color="#36d7b7" size={25} />
-        </div> : <>
+        loading ? <div className="fixed inset-0 z-[9999] flex h-screen w-screen items-center justify-center bg-[#fdf3ee]">
+      <BeatLoader color="#36d7b7" size={25} />
+    </div> : <>
         <HomeHero />
         <HomeAbout />
         <Chooseus />
