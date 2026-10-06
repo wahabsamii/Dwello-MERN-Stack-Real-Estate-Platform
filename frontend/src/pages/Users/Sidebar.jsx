@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 
 import {
   MdDashboard,
-  MdSettings,
   MdLogout,
   MdMessage,
   MdMenu,
@@ -33,11 +32,6 @@ const links = [
     title: "Edit Profile",
     path: "/user/profile",
     icon: <FaUserEdit />,
-  },
-  {
-    title: "Settings",
-    path: "/user/settings",
-    icon: <MdSettings />,
   },
   {
     title: "Logout",
