@@ -28,10 +28,8 @@ function Footer() {
 
   return (
     <footer className="bg-[#DDC7BB] text-[#3b2921]">
-
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-5 md:px-10 lg:px-20 pt-16 pb-12">
-
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
 
           {/* Brand */}
@@ -55,7 +53,6 @@ function Footer() {
 
             {/* Contact */}
             <div className="mt-6 space-y-3">
-
               <div className="flex items-center gap-3 text-sm">
                 <div className="w-9 h-9 rounded-full bg-white/60 flex items-center justify-center">
                   <MdEmail className="text-[#4F3527]" />
@@ -79,7 +76,6 @@ function Footer() {
 
                 <span>San Francisco, CA</span>
               </div>
-
             </div>
           </div>
 
@@ -93,7 +89,6 @@ function Footer() {
             </h3>
 
             <ul className="mt-5 space-y-3">
-
               <li>
                 <Link
                   to="/about"
@@ -129,7 +124,6 @@ function Footer() {
                   Resources
                 </Link>
               </li>
-
             </ul>
           </div>
 
@@ -143,7 +137,6 @@ function Footer() {
             </h3>
 
             <ul className="mt-5 space-y-3">
-
               <li>
                 <Link
                   to="/faqs"
@@ -179,11 +172,10 @@ function Footer() {
                   Terms of Service
                 </Link>
               </li>
-
             </ul>
           </div>
 
-          {/* Find Us */}
+          {/* Explore */}
           <div
             data-aos="fade-up"
             data-aos-delay="300"
@@ -193,7 +185,6 @@ function Footer() {
             </h3>
 
             <ul className="mt-5 space-y-3">
-
               <li>
                 <Link
                   to="/properties"
@@ -229,10 +220,8 @@ function Footer() {
                   Blog
                 </Link>
               </li>
-
             </ul>
           </div>
-
         </div>
 
         {/* Newsletter */}
@@ -243,7 +232,6 @@ function Footer() {
           data-aos="fade-up"
           data-aos-delay="400"
         >
-
           <div>
             <h3 className="text-xl font-bold">
               Stay in the loop
@@ -255,7 +243,6 @@ function Footer() {
           </div>
 
           <div className="flex w-full lg:w-auto max-w-md">
-
             <input
               type="email"
               placeholder="Enter your email"
@@ -281,30 +268,35 @@ function Footer() {
             >
               <FaArrowRight />
             </button>
-
           </div>
-
         </div>
-
       </div>
 
       {/* Bottom Footer */}
       <div className="border-t border-[#4F3527]/20">
-
         <div
           className="max-w-7xl mx-auto px-5 md:px-10 lg:px-20
                      py-5
                      flex flex-col md:flex-row
                      items-center justify-between gap-4"
         >
-
-          <p className="text-xs md:text-sm text-[#5c4a42]">
+          {/* Copyright + Developer */}
+          <p className="text-xs md:text-sm text-[#5c4a42] text-center md:text-left">
             © {currentYear} Dwello Property. All rights reserved.
+            <span className="mx-2">|</span>
+            Developed by{" "}
+            <a
+              href="https://wahabsami.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-[#4F3527] hover:text-[#38251c] hover:underline transition-all duration-300"
+            >
+              Abdul Wahab
+            </a>
           </p>
 
           {/* Social Icons */}
           <div className="flex items-center gap-3">
-
             <a
               href="#"
               aria-label="Instagram"
@@ -360,13 +352,9 @@ function Footer() {
             >
               <FaLinkedinIn />
             </a>
-
           </div>
-
         </div>
-
       </div>
-
     </footer>
   );
 }
