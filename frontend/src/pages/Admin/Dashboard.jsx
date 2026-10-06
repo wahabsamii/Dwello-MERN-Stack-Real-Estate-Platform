@@ -51,7 +51,7 @@ export default function Dashboard() {
   // ================================
   const fetchUser = async () => {
     try {
-      const res = await axios.get("/api/auth/all");
+      const res = await axios.get("https://dwello-backend-tau.vercel.app/api/auth/all");
 
       if (res.data.success) {
         setUser(res.data.users || []);
@@ -68,7 +68,7 @@ export default function Dashboard() {
   // ================================
   const fetchAgents = async () => {
     try {
-      const res = await axios.get("/api/agents/all");
+      const res = await axios.get("https://dwello-backend-tau.vercel.app/api/agents/all");
 
       if (res.data.success) {
         setAgents(res.data.agents || []);
